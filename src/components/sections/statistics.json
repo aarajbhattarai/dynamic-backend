@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_layout_statistics",
+  "info": {
+    "displayName": "statistics",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "statistics": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.statistic"
+    }
+  }
+}

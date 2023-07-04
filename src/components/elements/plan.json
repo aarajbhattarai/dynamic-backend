@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_elements_plans",
+  "info": {
+    "name": "plan",
+    "displayName": "Pricing plan",
+    "icon": "search-dollar",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "string"
+    },
+    "answer": {
+      "type": "text"
+    }
+  }
+}

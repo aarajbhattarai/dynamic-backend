@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_slices_feature_rows_groups",
+  "info": {
+    "name": "FeatureRowsGroup",
+    "displayName": "Feaures row group",
+    "icon": "bars",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.feature-row"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "picture": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "longDescription": {
+      "type": "text"
+    }
+  }
+}

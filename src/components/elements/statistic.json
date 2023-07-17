@@ -1,7 +1,8 @@
 {
   "collectionName": "components_elements_statistics",
   "info": {
-    "displayName": "Statistic"
+    "displayName": "Statistic",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -9,7 +10,7 @@
       "type": "text"
     },
     "number": {
-      "type": "integer"
+      "type": "string"
     }
   }
 }

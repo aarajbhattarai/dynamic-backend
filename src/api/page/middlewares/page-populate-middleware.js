@@ -17,7 +17,7 @@ const populate = {
         populate: {
           fields: ["title", "description", "showLink", "newTab", "url", "text"],
           media: {
-            fields: ["url", "alternativeText", "caption", "width", "height"],
+            fields: ["url", "alternativeText"],
           },
         },
       },
@@ -25,19 +25,14 @@ const populate = {
         populate: {
           fields: ["*"],
           icon: {
-            fields: ["url", "alternativeText", "caption", "width", "height"],
+            fields: ["url", "alternativeText"],
           },
         },
       },
-      // features:{
-      //   populate:{
-      //     fields:["title", "description", "showLink", "newTab", "url", "text"],
-      //   },
-      // },
       testimonials: {
         populate: {
           picture: {
-            fields: ["url", "alternativeText", "caption", "width", "height"],
+            fields: ["url", "alternativeText"],
           },
         },
       },
@@ -51,12 +46,23 @@ const populate = {
       },
       submitButton: {
         populate: true,
-      },
+      }, 
     },
   },
   seo: {
     fields: ["metaTitle", "metaDescription"],
     populate: { shareImage: true },
+  },
+  articles:{
+    populate: {
+      fields:["*"],
+      cover:{
+        fields:["url","alternativeText"],
+      },
+      category:{
+        fields: ["*"],
+      }
+    },
   }
 };
 

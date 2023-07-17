@@ -47,15 +47,6 @@
         }
       }
     },
-    "slug": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
-      "type": "string",
-      "regex": "^$|^[a-zA-Z/-]+$"
-    },
     "heading": {
       "pluginOptions": {
         "i18n": {
@@ -87,6 +78,33 @@
       "relation": "manyToMany",
       "target": "api::article.article",
       "inversedBy": "pages"
+    },
+    "contactFormDisplay": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "boolean",
+      "default": true
+    },
+    "articleDisplay": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "boolean",
+      "default": false
+    },
+    "slug": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "uid",
+      "targetField": "shortName"
     }
   }
 }

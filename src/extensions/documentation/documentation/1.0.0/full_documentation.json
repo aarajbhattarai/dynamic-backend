@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-07-03T19:01:16.158Z"
+    "x-generation-date": "2023-07-17T06:39:18.352Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3311,7 +3311,7 @@
                                                                     "type": "string"
                                                                   },
                                                                   "number": {
-                                                                    "type": "integer"
+                                                                    "type": "string"
                                                                   }
                                                                 }
                                                               }
@@ -3320,9 +3320,6 @@
                                                         }
                                                       ]
                                                     }
-                                                  },
-                                                  "slug": {
-                                                    "type": "string"
                                                   },
                                                   "heading": {
                                                     "type": "string"
@@ -3502,6 +3499,15 @@
                                                         }
                                                       }
                                                     }
+                                                  },
+                                                  "contactFormDisplay": {
+                                                    "type": "boolean"
+                                                  },
+                                                  "articleDisplay": {
+                                                    "type": "boolean"
+                                                  },
+                                                  "slug": {
+                                                    "type": "string"
                                                   },
                                                   "createdAt": {
                                                     "type": "string",
@@ -7528,7 +7534,7 @@
                                                         "type": "string"
                                                       },
                                                       "number": {
-                                                        "type": "integer"
+                                                        "type": "string"
                                                       }
                                                     }
                                                   }
@@ -7537,9 +7543,6 @@
                                             }
                                           ]
                                         }
-                                      },
-                                      "slug": {
-                                        "type": "string"
                                       },
                                       "heading": {
                                         "type": "string"
@@ -7719,6 +7722,15 @@
                                             }
                                           }
                                         }
+                                      },
+                                      "contactFormDisplay": {
+                                        "type": "boolean"
+                                      },
+                                      "articleDisplay": {
+                                        "type": "boolean"
+                                      },
+                                      "slug": {
+                                        "type": "string"
                                       },
                                       "createdAt": {
                                         "type": "string",
@@ -10977,7 +10989,7 @@
                                                         "type": "string"
                                                       },
                                                       "number": {
-                                                        "type": "integer"
+                                                        "type": "string"
                                                       }
                                                     }
                                                   }
@@ -10986,9 +10998,6 @@
                                             }
                                           ]
                                         }
-                                      },
-                                      "slug": {
-                                        "type": "string"
                                       },
                                       "heading": {
                                         "type": "string"
@@ -11168,6 +11177,15 @@
                                             }
                                           }
                                         }
+                                      },
+                                      "contactFormDisplay": {
+                                        "type": "boolean"
+                                      },
+                                      "articleDisplay": {
+                                        "type": "boolean"
+                                      },
+                                      "slug": {
+                                        "type": "string"
                                       },
                                       "createdAt": {
                                         "type": "string",
@@ -15707,7 +15725,7 @@
                                                                       "type": "string"
                                                                     },
                                                                     "number": {
-                                                                      "type": "integer"
+                                                                      "type": "string"
                                                                     }
                                                                   }
                                                                 }
@@ -15716,9 +15734,6 @@
                                                           }
                                                         ]
                                                       }
-                                                    },
-                                                    "slug": {
-                                                      "type": "string"
                                                     },
                                                     "heading": {
                                                       "type": "string"
@@ -15898,6 +15913,15 @@
                                                           }
                                                         }
                                                       }
+                                                    },
+                                                    "contactFormDisplay": {
+                                                      "type": "boolean"
+                                                    },
+                                                    "articleDisplay": {
+                                                      "type": "boolean"
+                                                    },
+                                                    "slug": {
+                                                      "type": "string"
                                                     },
                                                     "createdAt": {
                                                       "type": "string",
@@ -16945,9 +16969,6 @@
               ]
             }
           },
-          "slug": {
-            "type": "string"
-          },
           "heading": {
             "type": "string"
           },
@@ -16970,6 +16991,15 @@
               ],
               "example": "string or id"
             }
+          },
+          "contactFormDisplay": {
+            "type": "boolean"
+          },
+          "articleDisplay": {
+            "type": "boolean"
+          },
+          "slug": {
+            "type": "string"
           },
           "locale": {
             "type": "string"
@@ -17031,9 +17061,6 @@
                   ]
                 }
               },
-              "slug": {
-                "type": "string"
-              },
               "heading": {
                 "type": "string"
               },
@@ -17056,6 +17083,15 @@
                   ],
                   "example": "string or id"
                 }
+              },
+              "contactFormDisplay": {
+                "type": "boolean"
+              },
+              "articleDisplay": {
+                "type": "boolean"
+              },
+              "slug": {
+                "type": "string"
               },
               "locale": {
                 "type": "string"
@@ -17226,9 +17262,6 @@
                 }
               ]
             }
-          },
-          "slug": {
-            "type": "string"
           },
           "heading": {
             "type": "string"
@@ -19739,7 +19772,7 @@
                                                         "type": "string"
                                                       },
                                                       "number": {
-                                                        "type": "integer"
+                                                        "type": "string"
                                                       }
                                                     }
                                                   }
@@ -19748,9 +19781,6 @@
                                             }
                                           ]
                                         }
-                                      },
-                                      "slug": {
-                                        "type": "string"
                                       },
                                       "heading": {
                                         "type": "string"
@@ -19931,6 +19961,15 @@
                                           }
                                         }
                                       },
+                                      "contactFormDisplay": {
+                                        "type": "boolean"
+                                      },
+                                      "articleDisplay": {
+                                        "type": "boolean"
+                                      },
+                                      "slug": {
+                                        "type": "string"
+                                      },
                                       "createdAt": {
                                         "type": "string",
                                         "format": "date-time"
@@ -20048,6 +20087,15 @@
                 }
               }
             }
+          },
+          "contactFormDisplay": {
+            "type": "boolean"
+          },
+          "articleDisplay": {
+            "type": "boolean"
+          },
+          "slug": {
+            "type": "string"
           },
           "createdAt": {
             "type": "string",
@@ -22090,7 +22138,7 @@
             "type": "string"
           },
           "number": {
-            "type": "integer"
+            "type": "string"
           }
         }
       },

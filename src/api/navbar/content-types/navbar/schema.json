@@ -21,7 +21,8 @@
       "component": "shared.menu-item"
     },
     "slug": {
-      "type": "uid"
+      "type": "uid",
+      "targetField": "label"
     }
   }
 }

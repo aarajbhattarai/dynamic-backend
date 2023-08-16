@@ -38,7 +38,7 @@ export default {
   bootstrap,
   translations: {
     en: {
-      "app.components.LeftMenu.navbrand.title": "Dashboard",
+      "app.components.LeftMenu.navbrand.title": "SpeedWings Dashboard",
 
     },
   },

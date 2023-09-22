@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_elements_job_vacancies",
+  "info": {
+    "displayName": "Job Vacancy",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "jobTitle": {
+      "type": "string"
+    },
+    "jobDescription": {
+      "type": "text"
+    },
+    "jobLocation": {
+      "type": "string"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    },
+    "numberOfApplicant": {
+      "type": "integer"
+    },
+    "deadline": {
+      "type": "date"
+    }
+  }
+}

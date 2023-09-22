@@ -39,7 +39,10 @@
         "sections.lead-form",
         "sections.features",
         "sections.heading",
-        "sections.statistics"
+        "sections.statistics",
+        "shared.quote",
+        "shared.slider",
+        "sections.job-vacancies"
       ],
       "pluginOptions": {
         "i18n": {

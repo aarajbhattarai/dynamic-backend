@@ -13,6 +13,7 @@ const populate = {
       buttons: {
         populate: true,
       },
+      jobVacancy: { populate: ["*"] },
       feature: {
         populate: {
           fields: ["title", "description", "showLink", "newTab", "url", "text"],
@@ -37,33 +38,33 @@ const populate = {
         },
       },
       statistics: {
-        populate:{
-          fields:['description','number']
-        }
+        populate: {
+          fields: ["description", "number"],
+        },
       },
       plans: {
         populate: ["product_features"],
       },
       submitButton: {
         populate: true,
-      }, 
+      },
     },
   },
   seo: {
     fields: ["metaTitle", "metaDescription"],
     populate: { shareImage: true },
   },
-  articles:{
+  articles: {
     populate: {
-      fields:["*"],
-      cover:{
-        fields:["url","alternativeText"],
+      fields: ["*"],
+      cover: {
+        fields: ["url", "alternativeText"],
       },
-      category:{
+      category: {
         fields: ["*"],
-      }
+      },
     },
-  }
+  },
 };
 
 module.exports = (config, { strapi }) => {

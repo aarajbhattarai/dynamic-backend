@@ -13,7 +13,12 @@ const populate = {
       buttons: {
         populate: true,
       },
-      jobVacancy: { populate: ["*"] },
+
+      jobVacancy: { populate: ["*"] },      
+      employer: { populate: ["*"] },
+      jobSeeker: { populate: ["*"] },
+
+      
       feature: {
         populate: {
           fields: ["title", "description", "showLink", "newTab", "url", "text"],

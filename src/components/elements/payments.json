@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_elements_payments",
+  "info": {
+    "displayName": "Payments",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "invoiceNumber": {
+      "type": "biginteger"
+    },
+    "amount": {
+      "type": "integer"
+    },
+    "status": {
+      "type": "string"
+    },
+    "paymentDate": {
+      "type": "datetime"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_sections_job_seekers",
+  "info": {
+    "displayName": "Job Seeker",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "contact": {
+      "type": "biginteger"
+    },
+    "interests": {
+      "type": "text"
+    }
+  }
+}

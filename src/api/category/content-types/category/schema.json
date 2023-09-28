@@ -26,6 +26,18 @@
     },
     "description": {
       "type": "text"
+    },
+    "job_vacancy": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::job-vacancy.job-vacancy",
+      "inversedBy": "categories"
+    },
+    "employer": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::employer.employer",
+      "inversedBy": "categories"
     }
   }
 }

@@ -1,4 +1,5 @@
 module.exports = ({ env }) => ({
+
   seo: {
     enabled: true,
   },
@@ -32,4 +33,16 @@ module.exports = ({ env }) => ({
       dsn: env('SENTRY_DSN'),
     },
   },
+
+
+  'import-export-entries': {
+    enabled: true,
+    config: {
+      
+    },
+  },
+
+
+
+
 });

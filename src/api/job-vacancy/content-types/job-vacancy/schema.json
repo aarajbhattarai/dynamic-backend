@@ -4,7 +4,8 @@
   "info": {
     "singularName": "job-vacancy",
     "pluralName": "job-vacancies",
-    "displayName": "Job Vacancy"
+    "displayName": "Job Vacancy",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -20,13 +21,7 @@
     "jobLocation": {
       "type": "string"
     },
-    "categories": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::category.category",
-      "mappedBy": "job_vacancy"
-    },
-    "numberOfApplicant": {
+    "numberOfVacancies": {
       "type": "integer"
     },
     "deadline": {

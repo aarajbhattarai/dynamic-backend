@@ -4,7 +4,8 @@
   "info": {
     "singularName": "employer",
     "pluralName": "employers",
-    "displayName": "Employer"
+    "displayName": "Employer",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -17,16 +18,19 @@
     "contact": {
       "type": "biginteger"
     },
-    "job_vacancies": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::job-vacancy.job-vacancy",
-      "mappedBy": "employer"
-    },
     "categories": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::category.category",
+      "mappedBy": "employer"
+    },
+    "companyName": {
+      "type": "string"
+    },
+    "job_vacancies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::job-vacancy.job-vacancy",
       "mappedBy": "employer"
     }
   }

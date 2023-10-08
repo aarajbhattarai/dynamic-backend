@@ -1,8 +1,5 @@
 module.exports = ({ env }) => ({
 
-  seo: {
-    enabled: true,
-  },
   upload: {
     config: {
       provider: 'aws-s3',
@@ -27,12 +24,8 @@ module.exports = ({ env }) => ({
       },
     },
   },
-  sentry: {
-    enabled: true,
-    config: {
-      dsn: env('SENTRY_DSN'),
-    },
-  },
+
+
 
 
   'import-export-entries': {
@@ -41,8 +34,4 @@ module.exports = ({ env }) => ({
       
     },
   },
-
-
-
-
 });

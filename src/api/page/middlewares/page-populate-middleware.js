@@ -14,9 +14,6 @@ const populate = {
         populate: true,
       },
 
-      jobVacancy: { populate: ["*"] },      
-      employer: { populate: ["*"] },
-      jobSeeker: { populate: ["*"] },
 
       
       feature: {

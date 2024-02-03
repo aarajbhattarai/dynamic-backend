@@ -1,35 +1,19 @@
 module.exports = ({ env }) => ({
-  seo: {
-    enabled: true,
-  },
   upload: {
     config: {
-      provider: 'aws-s3',
+      provider: "strapi-provider-upload-supabase",
       providerOptions: {
-        baseUrl: env('CDN_URL'),
-        rootPath: env('CDN_ROOT_PATH'),
-        s3Options: {
-          accessKeyId: env('AWS_ACCESS_KEY_ID'),
-          secretAccessKey: env('AWS_ACCESS_SECRET'),
-          region: env('AWS_REGION'),
-          params: {
-            ACL: env('AWS_ACL', 'public-read'),
-            signedUrlExpires: env('AWS_SIGNED_URL_EXPIRES', 15 * 60),
-            Bucket: env('AWS_BUCKET'),
-          },
-        },
+        apiUrl: env("SUPABASE_API_URL"),
+        apiKey: env("SUPABASE_API_KEY"),
+        bucket: env("SUPABASE_BUCKET"),
+        directory: env("SUPABASE_DIRECTORY"),
+        options: {},
       },
       actionOptions: {
         upload: {},
         uploadStream: {},
         delete: {},
       },
-    },
-  },
-  sentry: {
-    enabled: true,
-    config: {
-      dsn: env('SENTRY_DSN'),
     },
   },
 });

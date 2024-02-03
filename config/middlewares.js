@@ -1,37 +1,37 @@
-module.exports = [
-  'strapi::errors',
+module.exports = ({ env }) => [
+  "strapi::errors",
   {
-    name: 'strapi::security',
+    name: "strapi::security",
     config: {
       contentSecurityPolicy: {
         useDefaults: true,
         directives: {
-          'connect-src': ["'self'", 'https:'],
-          'img-src': [
+          "connect-src": ["'self'", "https:"],
+          "default-src": ["'self'"],
+          "img-src": [
             "'self'",
-            'data:',
-            'blob:',
-            'dl.airtable.com',
-            'speedwings.s3.eu-north-1.amazonaws.com', // change here
+            "data:",
+            "blob:",
+            "market-assets.strapi.io",
+            env("SUPABASE_URL"),
           ],
-          'media-src': [
+          "media-src": [
             "'self'",
-            'data:',
-            'blob:',
-            'dl.airtable.com',
-            'speedwings.s3.eu-west-2.amazonaws.com', // change here
+            "data:",
+            "blob:",
+            "market-assets.strapi.io",
+            env("SUPABASE_URL"),
           ],
-          upgradeInsecureRequests: null,
         },
       },
     },
   },
-  'strapi::cors',
-  'strapi::poweredBy',
-  'strapi::logger',
-  'strapi::query',
-  'strapi::body',
-  'strapi::session',
-  'strapi::favicon',
-  'strapi::public',
+  "strapi::cors",
+  "strapi::poweredBy",
+  "strapi::logger",
+  "strapi::query",
+  "strapi::body",
+  "strapi::session",
+  "strapi::favicon",
+  "strapi::public",
 ];
